@@ -10,6 +10,7 @@ public class Main {
 		
 		
 		TestSingelton.getInstance().print();
+		Something.getInstance().print();
 	    factory = new CreateBirdFactory();
 		factory.creatBird().create();
 		factory.creatBird().create();

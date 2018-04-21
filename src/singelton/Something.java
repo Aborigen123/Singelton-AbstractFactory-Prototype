@@ -4,7 +4,7 @@ public class Something {
 	
 	    private volatile static Something instance;
 	    private Something() {}
-	    public static Something getInstance() {
+	    public static  Something getInstance() {
 	        if (instance == null) {
 	            synchronized (Something.class) {
 	               if (instance == null) {
@@ -18,5 +18,8 @@ public class Something {
 	        return instance;
 	    }
 
-
+		public void print() {
+			System.out.println("synchronized bird create simple");
+		}
+		
 	}
